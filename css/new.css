@@ -1,0 +1,16 @@
+.newColor {
+  background: #d8210d !important;
+}
+.nav {
+  background: #d8210d;
+}
+.nav a {
+  color: #fff;
+  font-size: 16px;
+}
+.nav-ul {
+  width: 980px;
+}
+.nav-ul li {
+  margin-right: 80px;
+}
