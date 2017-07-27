@@ -1,5 +1,11 @@
+@charset "utf-8";
+@main-color:#d8210d;//主要颜色
+@com-color:#c69c6d;//辅助颜色
+@main-width:980px;//主要的宽度
+@import "common.less";
+/*定义导航栏的样式*/
 .newColor{
-    background: #d8210d !important;
+    background: @main-color !important;
 }
 .nav{
     background: #d8210d;
@@ -9,8 +15,150 @@
     font-size:16px;
 }
 .nav-ul{
-    width: 980px;
+    width: @main-width;
     li{
         margin-right: 80px;
     }
+}
+.tright-ul li{
+    margin-left:5px;
+}
+/*轮播图的样式*/
+#slideBox{
+    position: relative;
+    width: 100%;
+}
+#slideBox .hd{
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom:5%;
+    margin-left: -105px;
+    z-index: 10;
+    ul li{
+        float:left;
+        width: 45px;
+        line-height: 30px;
+        cursor: pointer;
+        color:#fff;
+        background: #000;
+        img{
+            width: 100%;
+        }
+    }
+}
+#slideBox .bd{
+    width: 100%;
+    ul li{
+        img{
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+/*搜索框的样式*/
+.search_index{
+    div{
+       width:500px;
+        margin: 0 auto;
+        height: 34px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        input{
+            box-sizing: border-box;
+            width: 430px;
+            height: 34px;
+            border:1px solid @com-color;
+        }
+        span{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 70px;
+            height: 34px;
+            background: @com-color;
+            color:#fff;
+            line-height: 34px;
+            padding: 0 15px;
+        }
+    }
+}
+/*商品导航栏*/
+.thing-nav{
+    width: @main-width;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-size:16px;
+    li.main_list{
+        width: 19.9%;
+        background: @main-color;
+        color:#fff;
+        letter-spacing: 5px;
+    }
+    span.border{
+         border-left:1px solid #fff;
+     }
+    li.on{
+        box-sizing: border-box;
+        width: 19.9%;
+        height: 40px;
+        border: 1px solid @main-color;
+        background: #fff;
+        color:@main-color;
+        letter-spacing: 5px;
+    }
+}
+/*大个商品的详细页面*/
+.thing-detail{
+    box-sizing: border-box;
+    width: @main-width;
+    height: 300px;
+    margin: 0 auto;
+    .td_img{
+        display: inline-block;
+        width: 550px;
+        height: 300px;
+        img{
+            width: 550px;
+            height: 300px;
+        }
+    }
+    .tb_word{
+        display: inline-block;
+        width: 430px;
+        height: 300px;
+        color:@com-color;
+        //text-align: center;
+        h2{
+            font-size:35px ;
+            line-height: 35px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            letter-spacing: 8px;
+        }
+        p{
+            font-size: 16px;
+            width: 280px;
+            margin: 0 auto;
+            line-height: 25px;
+            letter-spacing: 2px;
+        }
+        a{
+            display: inline-block;
+            color:@com-color;
+            border: 1px solid @com-color;
+            padding: 5px 15px;
+            font-size:16px;
+            margin-top: 25px;
+            font-weight: bold;
+        }
+    }
+}
+/*总商品详细*/
+.tl-title{
+    width: @main-width;
+    margin: 0 auto;
 }
