@@ -1,0 +1,14 @@
+.list-title {
+  color: #c69c6d;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.list-more {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #000;
+}
+.list-more:hover {
+  color: #08b5fb;
+  text-decoration: none;
+}
