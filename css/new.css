@@ -70,25 +70,29 @@
 .search_index div {
   width: 500px;
   margin: 0 auto;
-  height: 34px;
+  height: 44px;
   margin-top: 15px;
   margin-bottom: 40px;
 }
 .search_index div input {
   box-sizing: border-box;
   width: 430px;
-  height: 34px;
+  height: 44px;
+  line-height: 44px;
   border: 1px solid #c69c6d;
+  vertical-align: bottom;
 }
 .search_index div span {
   box-sizing: border-box;
   display: inline-block;
+  letter-spacing: 3px;
   width: 70px;
-  height: 34px;
+  height: 44px;
   background: #c69c6d;
   color: #fff;
-  line-height: 34px;
+  line-height: 44px;
   padding: 0 15px;
+  vertical-align: bottom;
 }
 /*商品导航栏*/
 .thing-nav {
@@ -222,6 +226,64 @@
   text-decoration: none;
   background: #b35f6f;
 }
-.tf-title {
-  width: 1px;
+.thing-flow {
+  width: 980px;
+  height: 100px;
+  margin: 0 auto;
+}
+.thing-flow .tf-title {
+  width: 100px;
+}
+.side {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 140px;
+  height: 324px;
+  margin-top: -150px;
+  box-sizing: border-box;
+}
+.side div {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.side div span {
+  display: inline-block;
+  width: 22px;
+  height: 30px;
+  background-image: url("../images/side.png");
+  background-position: 0 157px;
+  margin-top: 150px;
+}
+.side ul {
+  display: inline-block;
+  width: 80px;
+}
+.side li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-bottom: 1px solid #fff;
+  background: #c69c6d;
+}
+.side li span {
+  margin-top: 15px ;
+  display: inline-block;
+  width: 39px;
+  height: 48px;
+}
+.side li:last-child {
+  border: none;
+}
+.side li:first-child span {
+  background: url("../images/side.png") 38px 0;
+}
+.side li:nth-child(2) span {
+  background: url("../images/side.png") 38px 212px;
+}
+.side li:nth-child(3) span {
+  background: url("../images/side.png") 38px 125px;
+}
+.side li:nth-child(4) span {
+  background: url("../images/side.png") 38px 48px;
 }

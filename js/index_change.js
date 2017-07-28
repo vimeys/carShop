@@ -21,3 +21,18 @@ $(".thing-nav li").on("click",function(){
     })
 
 });
+$(".side_toggle").on("click",function () {
+    if($(".side").attr("data-class")==1){
+        $(".side").animate({right:"-100px"},1200);
+        $(".side").attr("data-class",2);
+        $(".side_toggle span").css({transform: "rotate(180deg)"})
+    }
+});
+$(".side_toggle").mouseover(function () {
+    if($(".side").attr("data-class")==2){
+        $(".side").animate({right:"0"},1200);
+        $(".side").attr("data-class",1);
+        $(".side_toggle span").css({transform: "rotate(0deg)"})
+    }
+
+})

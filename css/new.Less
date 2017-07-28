@@ -63,24 +63,28 @@
     div{
        width:500px;
         margin: 0 auto;
-        height: 34px;
+        height: 44px;
         margin-top: 15px;
         margin-bottom: 40px;
         input{
             box-sizing: border-box;
             width: 430px;
-            height: 34px;
+            height: 44px;
+            line-height: 44px;
             border:1px solid @com-color;
+            vertical-align: bottom;
         }
         span{
             box-sizing: border-box;
             display: inline-block;
+            letter-spacing: 3px;
             width: 70px;
-            height: 34px;
+            height: 44px;
             background: @com-color;
             color:#fff;
-            line-height: 34px;
+            line-height: 44px;
             padding: 0 15px;
+            vertical-align: bottom;
         }
     }
 }
@@ -219,6 +223,77 @@
         }
     }
 }
-.tf-title{
-   width: 1px;
+.thing-flow{
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    .tf-title{
+        width: 100px;
+    }
 }
+
+.side{
+   position:fixed;
+    right: 0;
+    top:50%;
+    width: 140px;
+    height: 324px;
+    margin-top: -150px;
+    box-sizing: border-box;
+    div{
+        vertical-align: middle;
+        margin-left: 10px;
+        span{
+            display: inline-block;
+            width: 22px;
+            height: 30px;
+            background-image: url("../images/side.png");
+            background-position: 0 157px;
+            margin-top: 150px;
+        }
+    }
+    ul{
+        display: inline-block;
+        width: 80px;
+    }
+    li{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        //border: 1px solid #ccc;
+        border-bottom:1px solid #fff;
+        background: @com-color;
+        span{
+            margin-top:15px ;
+            display: inline-block;
+            width: 39px;
+            height: 48px;
+        }
+    }
+
+    li:last-child{
+        border: none;
+    }
+    li:first-child{
+        span{
+            background: url("../images/side.png") 38px 0;
+        }
+    }
+    li:nth-child(2){
+        span{
+            background: url("../images/side.png") 38px 212px;
+        }
+    }
+    li:nth-child(3){
+        span{
+            background: url("../images/side.png") 38px 125px;
+        }
+    }
+    li:nth-child(4){
+        span{
+            background: url("../images/side.png") 38px 48px;
+        }
+    }
+
+}
+

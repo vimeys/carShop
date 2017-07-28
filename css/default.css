@@ -13,7 +13,7 @@ abbr,acronym { border: 0; }
 
 /*-- All --*/
 html{ min-width:1000px; }
-body{ color:#333;font:12px/20px Arial,"Microsoft YaHei","宋体",sans-serif; text-align:center; background:#fff;  }
+body{"Microsoft YaHei","宋体",sans-serif; text-align:center; background:#fff;  }
 a{ color:#333; text-decoration:none; outline:none;}
 a:hover {color:#f00; text-decoration:underline; }
 table { border-collapse: collapse; border-spacing: 0; empty-cells:show; }
@@ -39,6 +39,7 @@ table .new td{ color:#f60; font-weight:bold;  }
 .arrowB,.arrowB s{ border-top-color:#aaa; border-top-style:solid; }
 .arrowB s{ border-top-color:#fff; position:absolute; left:-5px; bottom:-3px; }
 .arrowB:hover{ border-top-color:#f60;  }
+
 
 /* css圆形 */
 .circle{ line-height:100%; overflow:hidden;  font-family:Tahoma,Helvetica; font-size:18px; color:#aaa;  }
