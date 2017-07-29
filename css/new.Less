@@ -1,6 +1,9 @@
 @charset "utf-8";
 @main-color:#d8210d;//主要颜色
 @com-color:#c69c6d;//辅助颜色
+@things-btn-color:#ff0036;//商品按钮颜色
+@succ-btn-color:#7bbc47;//商品按钮hover
+@things-color:#22f6e4;//分期购颜色
 @main-width:980px;//主要的宽度
 @import "common.less";
 /*定义导航栏的样式*/
@@ -65,7 +68,7 @@
         margin: 0 auto;
         height: 44px;
         margin-top: 15px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         input{
             box-sizing: border-box;
             width: 430px;
@@ -73,6 +76,7 @@
             line-height: 44px;
             border:1px solid @com-color;
             vertical-align: bottom;
+            padding-left: 10px;
         }
         span{
             box-sizing: border-box;
@@ -173,50 +177,76 @@
     ul{
         width: 100%;
         li{
+            position: relative;
             box-sizing: border-box;
-            width: 25%;
-            height: 200px;
-            padding:0 5px;
-            margin-top: 15px;
-            margin-bottom: 10px;
+            width: 23.5%;
+            height: 390px;
+            margin:0 7px;
+            margin-top: 14px;
+            margin-bottom: 14px;
+            background: #fff;
+            p{
+                position: absolute;
+                top:-10px;
+                left:-10px;
+                display: inline-block;
+                width: 70px;
+                height: 34px;
+                line-height: 34px;
+                background: @things-color;
+                color:#fff;
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
             div{
                 width: 100%;
                 height: 100%;
                dl{
                    img{
-                        width:200px;
-                       height:100px;
+                        width:232px;
+                       height:240px;
                    }
                    h3{
-                       font-size: 16px;
-                       margin-top: 8px;
-                       margin-bottom: 8px;
+                       display: inline-block;
+                       width: 200px;
+                       height: 40px;
+                       line-height: 20px;
+                       margin: 0 auto;
+                        text-align: left;
+                       font-size: 12px;
+                       margin-top: 14px;
+                       margin-bottom: 10px;
                    }
                    span {
                        color: @main-color;
-                       margin-right: 5px;
+                       margin-right: 10px;
                        display: inline-block;
-                       font-size: 16px;
+                       font-size: 14px;
                    }
-                   i{
+                   b{
                        display:inline-block;
                        margin-right: 5px;
-                       font-size: 16px;
+                       font-size: 14px;
                    }
                         a{
                             display:inline-block;
-                            width: 120px;
-                            height: 30px;
-                            line-height: 30px;
+                            width: 140px;
+                            height: 40px;
+                            line-height: 40px;
                             margin-top: 10px;
-                            letter-spacing: 8px;
+                            letter-spacing: 3px;
                             color:#fff;
-                            background:@main-color;
+                            background:@things-btn-color;
                             font-size: 16px;
                         }
                    a:hover{
+                       //text-decoration: none;
                        text-decoration: none;
-                       background: #b35f6f;
+                       font-size: 20px;
+                       background-image:url("../images/side.png");
+                       //background-repeat: no-repeat;
+                       background-position: 90px 39px;
+                       background-color: @things-btn-color;
                    }
                }
             }
@@ -231,7 +261,7 @@
         width: 100px;
     }
 }
-
+/*侧边栏*/
 .side{
    position:fixed;
     right: 0;
@@ -240,7 +270,7 @@
     height: 324px;
     margin-top: -150px;
     box-sizing: border-box;
-    div{
+    &>div{
         vertical-align: middle;
         margin-left: 10px;
         span{
@@ -252,48 +282,92 @@
             margin-top: 150px;
         }
     }
-    ul{
+    &>ul{
         display: inline-block;
         width: 80px;
-    }
-    li{
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        //border: 1px solid #ccc;
-        border-bottom:1px solid #fff;
-        background: @com-color;
-        span{
-            margin-top:15px ;
+        &>
+        li{
             display: inline-block;
-            width: 39px;
-            height: 48px;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            border-bottom:1px solid #fff;
+            background: @com-color;
+            &>a span{
+                display: inline-block;
+                width: 39px;
+                height: 48px;
+                position: absolute;
+                top:20px;
+                left:25px;
+            }
+            div{
+                display: none;
+                width: 80px;
+                height:80px;
+                position: absolute;
+                top:0;
+                left:0;
+                background-color: rgba(0,0,0,.5);
+            }
+            p{
+                display: none;
+                width: 80px;
+                height:20px;
+                font-size: 16px;
+                font-weight: bold;
+                vertical-align: middle;
+                position: absolute;
+                top:30px;
+                left:0;
+                color:#fff;
+            }
+            ul{
+                position:fixed;
+                top:50%;
+                margin-top: -150px;
+                right:85px;
+                width: 160px;
+                height: 324px;
+                li{
+                    width:160px;
+                    height: 160px;
+                    background: #fff;
+                    margin-bottom: 2px;
+                    span{
+                      display:inline-block;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        li:last-child{
+            border: none;
+        }
+        li:first-child{
+            span{
+                background: url("../images/side.png") 38px 0;
+            }
+        }
+        li:nth-child(2){
+            span{
+                background: url("../images/side.png") 38px 212px;
+            }
+        }
+        li:nth-child(3){
+            span{
+                background: url("../images/side.png") 38px 125px;
+            }
+        }
+        li:nth-child(4){
+            span{
+                background: url("../images/side.png") 38px 48px;
+            }
         }
     }
 
-    li:last-child{
-        border: none;
-    }
-    li:first-child{
-        span{
-            background: url("../images/side.png") 38px 0;
-        }
-    }
-    li:nth-child(2){
-        span{
-            background: url("../images/side.png") 38px 212px;
-        }
-    }
-    li:nth-child(3){
-        span{
-            background: url("../images/side.png") 38px 125px;
-        }
-    }
-    li:nth-child(4){
-        span{
-            background: url("../images/side.png") 38px 48px;
-        }
-    }
 
 }
 

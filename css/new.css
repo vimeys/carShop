@@ -72,7 +72,7 @@
   margin: 0 auto;
   height: 44px;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .search_index div input {
   box-sizing: border-box;
@@ -81,6 +81,7 @@
   line-height: 44px;
   border: 1px solid #c69c6d;
   vertical-align: bottom;
+  padding-left: 10px;
 }
 .search_index div span {
   box-sizing: border-box;
@@ -180,51 +181,75 @@
   width: 100%;
 }
 .tl-detail ul li {
+  position: relative;
   box-sizing: border-box;
-  width: 25%;
-  height: 200px;
-  padding: 0 5px;
-  margin-top: 15px;
-  margin-bottom: 10px;
+  width: 23.5%;
+  height: 390px;
+  margin: 0 7px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background: #fff;
+}
+.tl-detail ul li p {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+  line-height: 34px;
+  background: #22f6e4;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 .tl-detail ul li div {
   width: 100%;
   height: 100%;
 }
 .tl-detail ul li div dl img {
-  width: 200px;
-  height: 100px;
+  width: 232px;
+  height: 240px;
 }
 .tl-detail ul li div dl h3 {
-  font-size: 16px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 20px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 .tl-detail ul li div dl span {
   color: #d8210d;
-  margin-right: 5px;
+  margin-right: 10px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
 }
-.tl-detail ul li div dl i {
+.tl-detail ul li div dl b {
   display: inline-block;
   margin-right: 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 .tl-detail ul li div dl a {
   display: inline-block;
-  width: 120px;
-  height: 30px;
-  line-height: 30px;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
   margin-top: 10px;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   color: #fff;
-  background: #d8210d;
+  background: #ff0036;
   font-size: 16px;
 }
 .tl-detail ul li div dl a:hover {
   text-decoration: none;
-  background: #b35f6f;
+  font-size: 20px;
+  background-image: url("../images/side.png");
+  background-position: 90px 39px;
+  background-color: #ff0036;
 }
 .thing-flow {
   width: 980px;
@@ -234,6 +259,7 @@
 .thing-flow .tf-title {
   width: 100px;
 }
+/*侧边栏*/
 .side {
   position: fixed;
   right: 0;
@@ -243,11 +269,11 @@
   margin-top: -150px;
   box-sizing: border-box;
 }
-.side div {
+.side > div {
   vertical-align: middle;
   margin-left: 10px;
 }
-.side div span {
+.side > div span {
   display: inline-block;
   width: 22px;
   height: 30px;
@@ -255,35 +281,78 @@
   background-position: 0 157px;
   margin-top: 150px;
 }
-.side ul {
+.side > ul {
   display: inline-block;
   width: 80px;
 }
-.side li {
+.side > ul > li {
   display: inline-block;
   width: 80px;
   height: 80px;
+  position: relative;
   border-bottom: 1px solid #fff;
   background: #c69c6d;
 }
-.side li span {
-  margin-top: 15px ;
+.side > ul > li > a span {
   display: inline-block;
   width: 39px;
   height: 48px;
+  position: absolute;
+  top: 20px;
+  left: 25px;
 }
-.side li:last-child {
+.side > ul > li div {
+  display: none;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.side > ul > li p {
+  display: none;
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: #fff;
+}
+.side > ul > li ul {
+  position: fixed;
+  top: 50%;
+  margin-top: -150px;
+  right: 85px;
+  width: 160px;
+  height: 324px;
+}
+.side > ul > li ul li {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  margin-bottom: 2px;
+}
+.side > ul > li ul li span {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+}
+.side > ul li:last-child {
   border: none;
 }
-.side li:first-child span {
+.side > ul li:first-child span {
   background: url("../images/side.png") 38px 0;
 }
-.side li:nth-child(2) span {
+.side > ul li:nth-child(2) span {
   background: url("../images/side.png") 38px 212px;
 }
-.side li:nth-child(3) span {
+.side > ul li:nth-child(3) span {
   background: url("../images/side.png") 38px 125px;
 }
-.side li:nth-child(4) span {
+.side > ul li:nth-child(4) span {
   background: url("../images/side.png") 38px 48px;
 }

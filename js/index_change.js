@@ -34,5 +34,24 @@ $(".side_toggle").mouseover(function () {
         $(".side").attr("data-class",1);
         $(".side_toggle span").css({transform: "rotate(0deg)"})
     }
-
+});
+$(".side li").hover(function () {
+    console.log(1);
+        $(this).find("p").css({display:"inline-block"})
+        $(this).find("div").css({display:"inline-block"})
+},function () {
+    $(this).find("p").css({display:"none"})
+    $(this).find("div").css({display:"none"})
+})
+$(".side_hm").hover(function () {
+        $(this).find("ul").css({display:"block"})
+    },
+    function () {
+        $(this).find("ul").css({display:"none"})
+    }
+)
+$(".tl-btn").hover(function () {
+    $(this).html("");
+},function () {
+    $(this).html("加入购物车")
 })
