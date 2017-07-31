@@ -13,16 +13,11 @@
 .zbkc-right{float:right;}
 
 /*高级选项*/
-.dr_choose{overflow:hidden;margin-top:1px;width:960px;margin:0 auto}
-.drcho_top{height:48px;color:#8e4f1b;line-height:48px;cursor:default}
-.drchoose_ul{overflow:hidden;margin:0 auto;width:960px}
-.drchoose_ul li{float:left;cursor:pointer;background:url(../images/rp_right.jpg) no-repeat right center #f0f0f0;width:160px;text-align:center;color:#666}
-.drchoose_ul span{font-family:"微软雅黑";font-size:16px}
-.drchoose_ul .choose_hover{background:#d6aa70;color:#fff}
-.drcho_bto{background:url(../images/bt_bottom.png) no-repeat center;width:960px;height:14px;margin:0 auto}
+
+
 .search_other{width:226px;height:24px;background:url(../images/search_other.png) no-repeat center;border:none;margin-top:0}
 /*参数选项*/
-.select_choose{overflow:hidden;background:#fff;padding:16px 10px 16px 0;font-family:"微软雅黑"}
+.select_choose{overflow:hidden;background:#fff;padding:16px 10px 16px 0;font-family:"微软雅黑";width: 980px;margin: 0 auto}
 .select_choose select{vertical-align:middle}
 .select_choose span{padding-left:12px;color:#666;vertical-align:middle;font-size:14px;font-family:"微软雅黑"}
 .choose_cz,.choose_serach{padding:0 16px 0 12px;height:25px;line-height:25px;cursor:pointer}
@@ -41,18 +36,7 @@
 .choose-ks em{background:url(../images/icon.png) -87px -12px no-repeat;width:7px;height:7px;display:inline-block;vertical-align:middle;padding-right:6px}
 .choose-ks span{padding:0}
 /*分页*/
-.paging_all{position:relative;left:50%;float:left;-moz-user-select: none; /*火狐*/-webkit-user-select: none;  /*webkit浏览器*/-ms-user-select: none;   /*IE10*/-khtml-user-select: none; /*早期浏览器*/user-select: none;}
-.paging{height:40px}
-.paging li{float:left;border:1px solid #ccc;border-right-width:0px; width:36px;height:38px;line-height:38px;text-align:center;font-family:"Arial";font-size:14px;color:#cd505a;background:#fff;cursor:pointer}
-.paging .pli{float:left;border:1px solid #ccc;padding:0 13px;border-right-width:0px;width:auto}
-.paging .pli2{float:left;border:1px solid #ccc;padding:0 13px;width:auto}
 
-.paging .pag_gray{background:#efefef;color:#666}
-.paging .mouseover{background:#efefef;text-decoration:underline;}
-.pag_p{line-height:40px;font-size:14px;color:#666;padding-left:8px}
-.pag_txt{width:34px;margin-right:6px}
-.pag_bt{width:48px;background:#efefef;border:1px solid #ccc;height:18px;cursor:pointer}
-.paging_all-cort{position:relative;right:50%}
 
 /*钻戒购买页面*/
 .tobuy{background:#fff;padding-bottom:30px;margin-bottom:20px}
@@ -90,9 +74,9 @@
 .byright_sec{overflow:hidden;margin:8px 0;cursor:default}
 .byright_sec li{width:180px;height:30px;line-height:30px;float:left;font-size:12px;color:#888}
 /*材质刻字选择*/
-.byright_thr{background:#fef3f1;padding:14px 12px;cursor:default}
+.byright_thr{background:#fef3f1;padding:10px 10px;cursor:default}
 .thr_first{margin-bottom:12px}
-.thr_first span,.thr_first em,.thr_first a,.thr_secound span,.thr_secound a{font-size:14px;color:#666;vertical-align:middle}
+.thr_first span,.thr_first em,.thr_first a,.thr_secound span,.thr_secound a{font-size:18px;color:#666;vertical-align:middle}
 .thr_first select,.thr_secound input,.thr_secound select{vertical-align:middle}
 .thr_first i{display:inline-block;padding:0 12px;height:26px;line-height:26px;border:1px solid #ccc;text-align:center;font-family:"Arial";font-size:13px;color:#4c4c4c;cursor:pointer;background:#fff;vertical-align:middle}/*更新日期2014年9月13日*/
 .thr_first em{padding-left:20px}
@@ -100,8 +84,8 @@
 .thr_first a:hover,.thr_secound a:hover{color:#8e4f1b}
 .thr_secound a{font-size:12px;color:#888;text-decoration:underline}
 
-.thr_secound{position:relative;margin-bottom:10px;overflow:hidden}
-.thr_secound input{width:136px;height:26px;border:1px solid #ccc;line-height:26px}
+.thr_secound{position:relative;overflow:hidden}
+
 .write_choose{display:inline-block;width:30px;height:26px;line-height:26px;text-align:center;background:#fff;vertical-align:middle;color:#888;cursor:pointer;margin-right:4px;border:1px solid #ccc}
 .mwrite_choose{display:inline-block;width:30px;height:26px;line-height:26px;text-align:center;background:#fff;vertical-align:middle;color:#888;cursor:pointer;margin-right:4px;border:1px solid #ccc}
 .wwrite_choose{display:inline-block;width:30px;height:26px;line-height:26px;text-align:center;background:#fff;vertical-align:middle;color:#888;cursor:pointer;margin-right:4px;border:1px solid #ccc}
@@ -255,7 +239,7 @@
 .pho_cs{font-size:14px;padding:12px 0 30px 0}
 .pho_cs p{line-height:24px}
 .pho_cs span{color:#888}
-.pho_cs i{color:#666;padding-right:10px}
+/*.pho_cs i{color:#666;padding-right:10px}*/
 .pho_cs .text_indet{padding-left:49px}
 
 /*对戒页面*/
@@ -444,8 +428,8 @@
 
 .thefirst_it,.thesec_it{overflow:hidden}
 .thesec_it{margin-top:6px}
-.thesec_word-left b{font-weight:100;border:1px solid #cfcfcf;border-right:none;display:inline-block;height:22px;line-height:22px;vertical-align:middle}
-.thesec_word-left i{color:#666;font-size:14px;padding-right:12px;border-right:1px solid #cfcfcf;display:inline-block;width:70px;text-align:center;cursor:pointer}
+
+
 .thesec_word-left .kspx_click{color:#d6aa70}/*降序*/
 .thesec_word-left .sxpx_click{color:#d6aa70}/*升序*/
 .thesec_word i{font-size:14px;color:#8e4f1b}

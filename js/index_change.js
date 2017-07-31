@@ -42,7 +42,9 @@ $(".side li").hover(function () {
 },function () {
     $(this).find("p").css({display:"none"})
     $(this).find("div").css({display:"none"})
-})
+});
+
+//控制客服的显示几隐藏
 $(".side_hm").hover(function () {
         $(this).find("ul").css({display:"block"})
     },
@@ -50,8 +52,10 @@ $(".side_hm").hover(function () {
         $(this).find("ul").css({display:"none"})
     }
 )
-$(".tl-btn").hover(function () {
-    $(this).html("");
-},function () {
-    $(this).html("加入购物车")
+
+$(".collect i").on("click",function () {
+    $(this).addClass("onColl");
+    alert("您已收藏");
+    $(this).prev().html("已收藏");
+
 })
