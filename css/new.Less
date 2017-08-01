@@ -716,6 +716,7 @@ box-sizing: border-box;
             text-align: center;
             vertical-align: middle;
             font-size: 30px;
+            cursor:pointer;
         }
         .minus {
             border-right: 1px solid #afafaf;
@@ -975,6 +976,18 @@ box-sizing: border-box;
         td:nth-child(6){
             color:@things-btn-color;
         }
+        td:last-child{
+            button{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url("../images/newImage/shopCar_icon.png") no-repeat 3px 3px;
+                border: none;
+            }
+            button:hover{
+                background: url("../images/newImage/shopCar_icon.png") no-repeat 0 -145px;
+            }
+        }
     }
     .input_radio{
         box-sizing: border-box;
@@ -993,3 +1006,94 @@ box-sizing: border-box;
         background:url("../images/newImage/shopCar_icon.png") no-repeat 0 -25px;
     }
 }
+/*留言*/
+.sc_message{
+    background: #fff;
+    margin-top: 30px;
+    padding:30px 40px 10px 20px;
+    p{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    textarea{
+        width:700px;
+        height: 200px;
+        vertical-align: top;
+        padding:16px 0 0 24px;
+        border-radius: 10px;
+
+    }
+}
+/*合计结算*/
+.sc_total{
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    background: #e6e6e6;
+    line-height: 60px;
+    margin-bottom: 50px;
+    li:first-child{
+        padding-left: 20px;
+        font-size: 18px;
+        margin-right: 100px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        span{
+            color:@things-btn-color;
+        }
+    }
+    li:nth-child(2){
+        padding-left: 50px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        color:#afafaf;
+        font-weight: bold;
+    }
+    li.on{
+        color:@things-btn-color;
+    }
+    li:last-child{
+        button{
+            width:210px;
+            height: 60px;
+            font-size: 24px;
+            border: none;
+            background: #afafaf;
+            color:@font-color;
+        }
+        button:hover{
+            background: @things-btn-color;
+            color:#fff;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

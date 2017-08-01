@@ -104,13 +104,13 @@
                     <td><span>12.00</span>元</td>
                     <td class="thr_secound">
                         <p>
-                            <span class="minus">-</span><input type="text" value="1"><span class="plus">+</span>
+                            <span class="minus">-</span><input type="text" value="1" onkeyup="value=this.value.replace(/\D+/g,'')"><span class="plus">+</span>
                         </p>
                     </td>
                     <td>
                         <span>60.00</span>元
                     </td>
-                    <td><button>删除</button></td>
+                    <td><button></button></td>
                 </tr>
                 <tr>
                     <td><i class="input_radio"></i></td>
@@ -127,7 +127,7 @@
                     <td>
                         <span>60.00</span>元
                     </td>
-                    <td><button>删除</button></td>
+                    <td><button></button></td>
                 </tr>
                 <tr>
                     <td><i class="input_radio"></i></td>
@@ -144,21 +144,23 @@
                     <td>
                         <span>60.00</span>元
                     </td>
-                    <td><button>删除</button></td>
+                    <td><button></button></td>
                 </tr>
                 </tbody>
             </table>
         </div>
         <!--留言-->
-        <div>
+        <div class="sc_message">
             <p>买家留言：</p>
-            <textarea name="" id="" cols="30" rows="10">
-
-            </textarea>
+            <textarea name="" id="" placeholder="请输入您的留言"></textarea>
         </div>
         <!--结算-->
-        <div>
-
+        <div class="sc_total fix">
+            <ul>
+                <li class="fl">一共<span>12</span>件商品,已选择<span>0</span>件</li>
+                <li class="fl on">合计（不含运费）：2222.00元</li>
+                <li class="fr"><button>去结算</button></li>
+            </ul>
         </div>
     </div>
 </form>
