@@ -5,6 +5,7 @@ $(function () {
         $(this).click(function () {
             $("html,body").stop(true, false).animate({ "scrollTop": 600+'px'}, 500);
             $(this).addClass("gdnav_sp").siblings().removeClass("gdnav_sp");
+            console.log(index);
             $('.xqbuy_it').eq(index).show().siblings().hide();
         });
     });
