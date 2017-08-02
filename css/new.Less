@@ -34,7 +34,7 @@
 
 .nav-ul {
     width: @main-width;
-    height: 36px;
+    height: 34px;
     li {
 box-sizing: border-box;
         margin-right: 80px;
@@ -845,7 +845,10 @@ box-sizing: border-box;
 
 }
 
-/*购物车页面*/
+
+
+/*购买页面*/
+
 .shopCar{
     width: @main-width;
     margin: 0 auto;
@@ -917,6 +920,235 @@ box-sizing: border-box;
             line-height: 64px;
             border-bottom:1px solid #f5f5f5;
         }
+        //th:first-child{
+        //    padding-right: 15px;
+        //}
+        th:nth-child(1){
+            width: 124px;
+        }
+        th:nth-child(2){
+            width: 212px;
+        }
+        th:nth-child(3){
+            width: 120px;
+        }
+        th:nth-child(4){
+            width: 200px;
+        }
+        th:nth-child(5){
+            width:160px
+        }
+        th:nth-child(6){
+            width: 50px;
+        }
+        td{
+            text-align: center;
+            height: 122px;
+            vertical-align: middle;
+            img{
+                width: 82px;
+                height: 82px;
+            }
+        }
+        //td:first-child{
+        //    padding-right: 15px;
+        //}
+        td:nth-child(2){
+            p{
+                font-size: 14px;
+                height: 40px;
+                line-height: 21px;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+            span{
+                color: @font-hover-color;
+            }
+        }
+        td:nth-child(3){
+
+        }
+        td:nth-child(4){
+            span{
+                vertical-align: top;
+            }
+            input{
+                vertical-align: top;
+            }
+        }
+        td:nth-child(5){
+            color:@things-btn-color;
+        }
+        td:last-child{
+            button{
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url("../images/newImage/shopCar_icon.png") no-repeat 3px 3px;
+                border: none;
+            }
+            button:hover{
+                background: url("../images/newImage/shopCar_icon.png") no-repeat 0 -145px;
+            }
+        }
+    }
+
+}
+/*留言*/
+.sc_message{
+    background: #fff;
+    margin-top: 30px;
+    padding:30px 40px 10px 20px;
+    p{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    textarea{
+        width:700px;
+        height: 200px;
+        vertical-align: top;
+        padding:16px 0 0 24px;
+        border-radius: 10px;
+
+    }
+}
+/*合计结算*/
+.sc_total{
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;
+    background: #e6e6e6;
+    line-height: 60px;
+    margin-bottom: 50px;
+    li:first-child{
+        padding-left: 20px;
+        font-size: 18px;
+        margin-right: 200px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        span{
+            color:@things-btn-color;
+        }
+    }
+    li:nth-child(2){
+        padding-left: 50px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        color:#afafaf;
+        font-weight: bold;
+    }
+    li.on{
+        color:@things-btn-color;
+    }
+    li:last-child{
+        button{
+            width:210px;
+            height: 60px;
+            font-size: 24px;
+            border: none;
+            background: #afafaf;
+            color:@font-color;
+        }
+        button:hover{
+            background: @things-btn-color;
+            color:#fff;
+        }
+
+    }
+
+}
+/*经销商*/
+.provide{
+    width: 980px;
+    height: 1300px;
+    margin: 0 auto;
+    background: #fff;
+    table{
+        margin: 0 auto 30px;
+        border:none;
+        line-height: 80px;
+
+        th{
+            text-align: center;
+            padding: 30px;
+        }
+        td:first-child{
+            text-align: right;
+            font-size: 18px;
+            color:@font-color;
+            padding-right: 20px;
+        }
+        td input{
+            width: 485px;
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid @font-color;
+            font-size: 18px;
+            padding-left: 56px;
+        }
+        input.on{
+            border:  1px solid @things-btn-color;
+        }
+
+    }
+    p{
+        margin: 24px auto 56px;
+        text-align: center;
+    }
+    .code_p{
+        img{
+            margin: 0 auto;
+            width:144px;
+            height: 144px;
+        }
+        h4{
+            margin: 20px auto 50px;
+            font-size: 20px;
+        }
+        P{
+            font-size: 18px;
+            i{
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+    }
+}
+
+/*公共的按钮*/
+.saveBtn{
+    border:none;
+    width: 140px;
+    height: 40px;
+    letter-spacing: 10px;
+    font-size: 18px;
+    background: #43f3c7;
+    border-radius:10px
+}
+/*购物车*/
+.buy_goods {
+    width: 980px;
+    margin: 0 auto;
+    background: #fff;
+    &>h1{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        padding-top: 30px;
+    }
+    table{
+        margin-left: 15px;
+        th{
+            text-align: center;
+            height: 64px;
+            line-height: 64px;
+            border-bottom:1px solid #f5f5f5;
+        }
         th:first-child{
             padding-right: 15px;
         }
@@ -976,6 +1208,33 @@ box-sizing: border-box;
         td:nth-child(6){
             color:@things-btn-color;
         }
+        td:last-child {
+            button {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                background: url("../images/newImage/shopCar_icon.png") no-repeat 3px 3px;
+                border: none;
+            }
+        }
+        .input_radio{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            border: 1px solid #afafaf;
+        }
+
+        i.on{
+            border: none;
+            background:url("../images/newImage/shopCar_icon.png") no-repeat 0 -25px;
+        }
+        td.title{
+            text-align: left;
+            padding-left: 20px;
+            height: 50px;
+        }
         td:last-child{
             button{
                 display: inline-block;
@@ -988,100 +1247,9 @@ box-sizing: border-box;
                 background: url("../images/newImage/shopCar_icon.png") no-repeat 0 -145px;
             }
         }
-    }
-    .input_radio{
-        box-sizing: border-box;
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        border-radius: 12px;
-        border: 1px solid #afafaf;
-    }
-    .input_radio:hover{
-        border: none;
-        background: url("../images/newImage/shopCar_icon.png") no-repeat 0 -92px;
-    }
-    i.on{
-        border: none;
-        background:url("../images/newImage/shopCar_icon.png") no-repeat 0 -25px;
-    }
-}
-/*留言*/
-.sc_message{
-    background: #fff;
-    margin-top: 30px;
-    padding:30px 40px 10px 20px;
-    p{
-        text-align: left;
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-    textarea{
-        width:700px;
-        height: 200px;
-        vertical-align: top;
-        padding:16px 0 0 24px;
-        border-radius: 10px;
 
     }
 }
-/*合计结算*/
-.sc_total{
-    margin-top: 30px;
-    width: 100%;
-    height: 60px;
-    background: #e6e6e6;
-    line-height: 60px;
-    margin-bottom: 50px;
-    li:first-child{
-        padding-left: 20px;
-        font-size: 18px;
-        margin-right: 100px;
-        font-weight: bold;
-        letter-spacing: 3px;
-        span{
-            color:@things-btn-color;
-        }
-    }
-    li:nth-child(2){
-        padding-left: 50px;
-        font-size: 18px;
-        letter-spacing: 3px;
-        color:#afafaf;
-        font-weight: bold;
-    }
-    li.on{
-        color:@things-btn-color;
-    }
-    li:last-child{
-        button{
-            width:210px;
-            height: 60px;
-            font-size: 24px;
-            border: none;
-            background: #afafaf;
-            color:@font-color;
-        }
-        button:hover{
-            background: @things-btn-color;
-            color:#fff;
-        }
-
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
