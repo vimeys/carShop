@@ -15,7 +15,7 @@ $(".thing-nav li").on("click",function(){
         type:"POST",
         data:data,
         dataType:"json",
-        success:function () {
+        success:function (){
 
         }
     })
